@@ -23,14 +23,14 @@ export default function Page() {
         <div className={classes.homeSection}><Sponsors /></div>
         <div className={classes.homeSection}><Features /></div>
       </div>
-        <div className={classes.homeSection}><ComingSoon /></div>
+      <div className={classes.homeSection}><ComingSoon /></div>
       <div className='responsive-container'>
 
         <div className={classes.homeSection}><Benefits /></div>
         <div className={classes.homeSection}><RoadMap /></div>
         <div className={classes.homeSection}><Community /></div>
         <div className={classes.homeSection}><Footer /></div>
-</div>
+      </div>
     </main >
   )
 }
