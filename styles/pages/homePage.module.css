@@ -258,4 +258,8 @@
 /* community */
 .community {
     @apply w-full;
+
+    .communityCtas{
+        @apply flex gap-2 items-center; 
+    }
 }
