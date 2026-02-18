@@ -1,0 +1,261 @@
+.homeSection {
+    @apply my-[50px];
+}
+
+.benefits,
+.features,
+.community,
+.roadMap {
+    @apply flex flex-col items-center gap-[30px] text-center;
+}
+
+/* HERO SECTION */
+.heroSection {
+    @apply relative w-full;
+}
+
+.heroSection::after {
+    content: '';
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, var(--color-secondary) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.heroVideo {
+    @apply object-cover w-full h-[100vh];
+    user-select: none;
+}
+
+.heroContentContainer {
+    @apply z-2 absolute w-full h-full left-[0px] top-[0px] pt-[8em];
+}
+
+.heroContent {
+    @apply flex flex-col gap-[20px] items-start;
+}
+
+.heroTitle,
+.comingSoonTitle {
+    @apply text-[76px] leading-[0.9em];
+    font-family: 'SFMedium';
+}
+
+.heroDesc,
+.comingSoonDesc {
+    @apply text-[20px] block max-w-[21.1em];
+    font-family: 'SFMedium';
+}
+
+.heroBtn {
+    @apply block p-[15px];
+    background: var(--color-bg-grey);
+}
+
+/* SPONSORS */
+.sponsors {
+    @apply flex flex-col gap-[20px] items-center;
+    color: var(--color-grey);
+}
+
+.sponsorsList {
+    @apply flex gap-[50px] items-center;
+}
+
+.sponsorImage {
+    @apply relative w-[auto] h-[1.875em] object-contain;
+}
+
+/* FEATURES */
+.features {}
+
+.featureList {
+    @apply flex flex-col gap-[50px] mt-[30px] w-full;
+}
+
+.feature {
+    @apply flex flex-col justify-between min-h-[542px] items-start w-full;
+    background-position: 50% 37px;
+    background-size: 109.91% auto;
+    background-repeat: no-repeat;
+}
+
+.feature__2,
+.feature__3 {
+    background-position: 200% -41%;
+    background-size: 80%;
+}
+
+.featureTag {
+    font-size: 15px;
+    font-weight: 500;
+    --btn-radius: 8px;
+    --btn-padding: 12px 20px;
+}
+
+.featureTagImage {
+    margin-left: -10px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.featureWriteup {
+    @apply text-start flex flex-col gap-[20px];
+}
+
+.featureCta {
+    --btn-padding: 15px 80px;
+}
+
+.featureTitle {
+    font-size: 30px;
+    line-height: 1.1;
+    color: transparent;
+    background: var(--color-grad);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.featureDesc {
+    color: var(--color-grey);
+    font-size: 18px;
+}
+
+.featureDesc,
+.featureTitle {
+    max-width: 500px;
+    display: block;
+}
+
+
+@media screen and (min-width: 768px) {
+    .feature {
+        padding: 50px 60px;
+    }
+
+    .featureTitle {
+        font-size: 44px;
+    }
+
+    /* Coming soon */
+    .comingSoonSpecTitle {
+        font-size: 21px;
+    }
+}
+
+/* COMMUNITY */
+.communityLogo {
+    @apply relative;
+}
+
+/* ROADMAP */
+.phaseLineImage {
+    @apply relative
+}
+
+/* COMING SOON */
+.comingSoon {
+    @apply relative min-h-[900px] py-[106px];
+}
+
+.comingSoonLabel {
+    background: var(--color-grad-green-rev);
+    font-family: var(--font-SFMedium);
+    --btn-padding: 8px;
+}
+
+.comingSoonBg {
+    @apply z-[-1] absolute left-[0] right-[0] bottom-[0] top-[0];
+}
+
+.comingSoonBg video {
+    @apply h-full w-full object-cover object-center;
+}
+
+.cominSoonWriteUps {
+    @apply flex flex-col gap-[16px] max-w-[600px] items-start;
+}
+
+.comingSoonSpecTitle {
+    background-image: var(--color-grad-green-rev);
+    font-size: 24px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.comingSoonSpecs {
+    @apply list-none m-[0] p-[0] flex flex-col gap-[15px];
+}
+
+.comingSoonSpecs li {
+    @apply relative;
+    padding: 0 0 0 20px;
+}
+
+.comingSoonSpecs li::before {
+    content: '.';
+    @apply absolute top-[0] left-[0] w-[24px] text-center;
+}
+
+.comingSoonNotice {
+    color: var(--color-grey);
+}
+
+/* Benefits */
+.benefits {
+    @apply relative;
+}
+
+.benefitList {
+    @apply grid grid-cols-3;
+}
+
+.benefit__1 {
+    @apply col-2;
+    background-image: url('/assets/images/benefits/1-light.svg');
+    padding: 20px 30px 0 30px;
+    background-position: 90% 0;
+
+}
+
+.benefit__2 {
+    background-image: url("/assets/images/benefits/2-image.png"),
+        url("/assets/images/benefits/dots.png"),
+        url("/assets/images/benefits/2-light-r.svg"),
+        url("/assets/images/benefits/2-light-l.png");
+    background-position: 50% 55px, 50% 50%, 100% 100%, 0 100%;
+    background-size: 432px auto, auto 100%, cover, cover;
+    background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+}
+
+.benefit__3 {
+    background-image: url("/assets/images/benefits/3-light.svg"),
+        url("/assets/images/benefits/3-image.png");
+    background-size: cover, auto 100%;
+    background-position: 0 0, 0 100%;
+}
+
+.benefit__4 {
+    background-image: url("/assets/images/benefits/dots.png");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+
+.benefit__4 {
+    background-image: url("/assets/images/benefits/5-light.svg");
+    background-position: 100%;
+}
+
+.benefit__2,
+.benefit__3,
+.benefit__5 {
+    @apply flex flex-col justify-between items-center h-full;
+}
+
+/* community */
+.community {
+    @apply w-full;
+}

@@ -1,0 +1,22 @@
+.header {
+    @apply z-[9999] absolute w-full flex justify-between py-[30px] px-[30px] items-center;
+    transition: .8s;
+}
+.headerScrolled {
+    @apply fixed py-[10px];
+    background: #000;
+    transition: .8s;
+}
+
+.headerOffWhite {
+    opacity: 0.4;
+}
+
+.headerCTA {
+    @apply text-[15px];
+    background: var(--color-blue);
+}
+
+.header nav *{
+    font-family: 'SFMedium';
+}

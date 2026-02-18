@@ -1,0 +1,54 @@
+.btn {
+    @apply cursor-pointer text-center relative;
+    color: var(--color-primary);
+    border-radius: var(--btn-radius, 50px);
+    padding: var(--btn-padding, 10px);
+}
+
+.btn-solid {}
+
+
+.btn-bordered {
+    background: var(--color-black);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(153, 153, 153, 0) 100%);
+    box-shadow: inset 0 0 0 2px var(--color-black);
+}
+
+.btn-bordered::after {
+    @apply content-[''] absolute left-[0px] top-[0px] bottom-[0px] right-[0px] border border-transparent rounded-[inherit];
+    background: var(--color-grad-blue) border-box;
+    pointer-event: none;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+}
+
+.btn-transparent {}
+
+/*  */
+.animatedText {
+    transform: perspective(10em) rotateX(-90deg) translate3d(0, 100%, 0);
+    opacity: 0;
+    transform-origin: 50% 100%;
+    margin-top: -1.19em;
+}
+
+.animated:hover>.animatedText {
+    transform: perspective(10em) rotateX(0deg) translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.animated:hover>.btnContent {
+    transform: perspective(10em) rotateX(90deg) translate3d(0, -100%, 0);
+    opacity: 0;
+}
+
+.animated>* {
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform-style: flat;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

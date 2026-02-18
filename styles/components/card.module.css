@@ -1,0 +1,40 @@
+.hcard {
+    @apply flex gap-[20px] max-h-[91px] h-[90px] rounded-[12px];
+}
+
+.hcard__image {
+    @apply h-[85%] w-[100px] overflow-hidden relative rounded-[6px];
+}
+
+.hcard__image.filled {
+    @apply h-[100%] w-[130px] rounded-[12px] rounded-se-[0px] rounded-ee-[0px];
+}
+
+.hcard__content {
+    @apply flex gap-[5px] items-center w-full;
+}
+
+
+/* OVERLAYED CARD */
+.ovcard {
+    @apply relative w-full min-h-[260px];
+}
+
+.ovcard_large {
+    @apply w-full col-span-2;
+}
+
+.ovcard__image {
+    @apply z-[-1];
+}
+
+.ocard__content {
+    @apply h-full w-full flex flex-col justify-end px-[18px] pb-[20px];
+}
+
+.ocard__content::before {
+    @apply h-full w-full absolute z-[-1] left-[0px] top-[0px];
+    content: '';
+    background: linear-gradient(180deg, rgba(125, 125, 125, 0) 0%, #000000 100%);
+
+}

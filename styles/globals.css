@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* components */
+@import "./components/button.module.css";
+@import "./components/card.module.css";
+@import "./components/header.module.css";
+@import "./utils.css";
+@import "./pages/homePage.module.css";
+
+/* @config "../tailwind.config.ts"; */
+
+@font-face {
+  font-family: 'SFRegular';
+  src: url('/fonts/SFProDisplay-Regular.woff');
+}
+
+@font-face {
+  font-family: 'SFMedium';
+  src: url('/fonts/SFProDisplay-Medium.woff');
+}
+
+@font-face {
+  font-family: 'SFSemibold';
+  src: url('/fonts/SFProDisplay-Semibold.woff');
+}
+
+@theme {
+  --color-primary: #000;
+  --color-secondary: #fff;
+  --color-accent: #0050E4;
+  --color-grey: #85929F;
+  --color-light-grey: #999999;
+  --color-blue: #6C95C0;
+  --color-border: #24263A;
+  --color-bg-grey: rgba(255, 255, 255, 0.1);
+  /* gradients */
+  --color-grad-blue: linear-gradient(92.55deg, rgba(56, 85, 255, 0.5) 20.4%, #3855FF 38.49%, rgba(255, 255, 255, 0.23) 97.87%);
+  --color-dark-gradient: linear-gradient(from #000, to var(--coloo-light-grey));
+  --color-grad: linear-gradient(122.79deg, #fff 44.98%, #9a9aa2 90.4%);
+  --color-grad-green-rev: linear-gradient(37deg, #3855FF 0%, #CFD6FF 52%, #8091FF 100%);
+  /* fonts */
+  --font-SFRegular: 'SFRegular';
+  --font-SFMedium: 'SFMedium';
+  --font-SFSemibold: 'SFSemibold';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #fff;
+    --color-secondary: #000;
+  }
+}
+
+
+body {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  font: 500 16px/1.5 'SFRegular';
+}

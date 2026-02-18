@@ -1,0 +1,33 @@
+.section-title,
+.dark-grad {
+  background: var(--color-grad);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.section-title {
+  @apply text-5xl max-w-[14em];
+
+}
+
+.section-subtitle {
+  @apply text-2xl max-w-[45em];
+  color: var(--color-grey)
+}
+
+@media only screen and (min-width: 768px) {
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .section-title {
+    @apply text-[56px] max-w-[14em];
+    font-family: var(--font-SFMedium);
+  }
+}
+
+.responsive-container {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
