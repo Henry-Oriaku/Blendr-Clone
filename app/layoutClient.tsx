@@ -14,7 +14,7 @@ export default function LayoutClient({
                 <body className="mx-auto antialiased">
 
                     {/* Mobile Notice */}
-                    <div className="md:hidden fixed inset-0 bg-black text-white flex items-center justify-center p-6 z-100">
+                    <div className="md:hidden fixed inset-0 bg-black text-white flex items-center justify-center p-6 z-[9999]">
                         <div className="text-center">
                             <h1 className="text-xl font-semibold mb-4">
                                 Desktop Experience Recommended

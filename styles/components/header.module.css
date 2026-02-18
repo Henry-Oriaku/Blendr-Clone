@@ -1,5 +1,5 @@
 .header {
-    @apply z-[9999] absolute w-full flex justify-between py-[30px] px-[30px] items-center;
+    @apply z-[500] absolute w-full flex justify-between py-[30px] px-[30px] items-center;
     transition: .8s;
 }
 .headerScrolled {
