@@ -13,7 +13,7 @@ export default function RoadMap() {
         <section className={classes.roadMap}>
             <h2 className={'section-title'}>MVP Development Roadmap</h2>
             <span className={'section-subtitle'}>Establish a functional prototype that allows GPU owners to offer their computing power and users to execute tasks using available GPU resources.</span>
-            <div hidden>
+            {/* <div hidden>
                 <div className={classes.phase}>
                     <div className={classes.phaseTitle}>
                         <span>Phase 1</span>
@@ -159,7 +159,7 @@ export default function RoadMap() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </section>
     )

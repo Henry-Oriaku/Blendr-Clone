@@ -17,7 +17,7 @@ export default function Benefits() {
             <span className={'section-subtitle'}>for powering rendering and computational tasks</span>
             <Button variant='bordered'>Learn More</Button>
 
-            <div className={classes.benefitList}>
+            {/* <div className={classes.benefitList} >
                 <div className={cn([classes.benefit, classes.benefit__1])}>
                     <Image src={''} alt={''} />
                 </div>
@@ -61,7 +61,7 @@ export default function Benefits() {
                         <Image src={''} alt={''} />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section >
     )
 }
