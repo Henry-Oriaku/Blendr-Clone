@@ -260,6 +260,6 @@
     @apply w-full;
 
     .communityCtas{
-        @apply flex gap-[2px] items-center; 
+        @apply flex gap-[6px] items-center; 
     }
 }
